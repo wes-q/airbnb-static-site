@@ -25,7 +25,9 @@ const HomePage = () => {
                     </div>
                 </div>
             </div>
-            <img src="./src/assets/dave.jpg" alt="dave" />
+            <div className="bg-white">
+                <img src="./src/assets/dave.jpg" alt="dave" />
+            </div>
         </>
     );
 };
