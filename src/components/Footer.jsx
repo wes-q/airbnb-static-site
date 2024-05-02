@@ -1,5 +1,5 @@
 const Footer = () => (
-    <div className="flex flex-col justify-center text-xs sm:text-base items-center bg-light-c dark:bg-dark-c p-4 text-center h-16 sm:h-20 shadow-md">
+    <div className="flex flex-col justify-center text-xs sm:text-base items-center bg-secondary p-4 text-center h-16 sm:h-20 shadow-md">
         <div className="flex sm:text-sm">
             <a className="" href="https://github.com/iamwesofph/top-wesbook" target="_blank">
                 <span className="mr-6">© Wes Q. 2023</span>
