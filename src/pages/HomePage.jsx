@@ -1,8 +1,16 @@
 import SlideshowAuto from "../components/SlideshowAuto";
+import Card from "../components/Card";
+import { listings } from "../data";
+import { useNavigate } from "react-router-dom";
 
 const images = ["./src/assets/1.jpg", "./src/assets/2.jpg"];
 
 const HomePage = () => {
+    const navigate = useNavigate(null);
+    const handleViewMore = () => {
+        navigate("/listings");
+    };
+
     return (
         <>
             <div className="relative h-[550px] bg-black">
@@ -26,7 +34,7 @@ const HomePage = () => {
                 </div>
             </div>
             <div className="flex justify-center my-20">
-                <div className="flex justify-center w-full max-w-[900px] border-4 border-secondary rounded-md">
+                <div className="flex justify-center w-full max-w-[900px] border-4 border-secondary rounded-md p-2 bg-secondary">
                     <div className="bg-black flex-1">
                         <img className="rounded-s-md" src="./src/assets/dave.jpg" alt="dave" />
                     </div>
@@ -43,12 +51,18 @@ const HomePage = () => {
                 <span className="text-2xl font-extrabold text-secondary">Our Listings</span>
 
                 <div className="grid grid-cols-3 gap-8">
-                    <div className="rounded-md h-96 w-72 bg-secondary border-2 border-primary"></div>
-                    <div className="rounded-md h-96 w-72 bg-secondary border-2 border-primary"></div>
-                    <div className="rounded-md h-96 w-72 bg-secondary border-2 border-primary"></div>
+                    {listings.map((listing) => {
+                        return (
+                            <>
+                                <Card cardData={listing} />
+                            </>
+                        );
+                    })}
                 </div>
 
-                <button className="rounded-sm bg-secondary py-2 px-4 text-xs hover:bg-primary hover:text-white transition-colors duration-500">View More</button>
+                <button className="rounded-sm bg-secondary py-2 px-4 text-xs hover:bg-primary hover:text-white transition-colors duration-500" onClick={handleViewMore}>
+                    View More
+                </button>
             </div>
         </>
     );

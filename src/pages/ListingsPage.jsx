@@ -1,3 +1,6 @@
+import { listings } from "../data";
+import Card from "../components/Card";
+
 const ListingsPage = () => {
     return (
         <>
@@ -7,8 +10,18 @@ const ListingsPage = () => {
                     <span className="font-bold">LISTINGS</span>
                 </div>
             </div>
-            <div className="flex justify-center text-secondary">
+
+            <div className="flex flex-col items-center text-secondary gap-8 mb-20">
                 <span className="text-2xl font-extrabold">Yale University Area</span>
+                <div className="grid grid-cols-3 gap-8">
+                    {listings.map((listing) => {
+                        return (
+                            <>
+                                <Card cardData={listing} />
+                            </>
+                        );
+                    })}
+                </div>
             </div>
         </>
     );

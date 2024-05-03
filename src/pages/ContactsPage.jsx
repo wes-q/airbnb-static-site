@@ -1,5 +1,5 @@
 import ListBoxNoIcons from "../components/ListBoxNoIcons";
-import { locations, contacts, links } from "../data";
+import { locations, contacts } from "../data";
 import LeaveAMessage from "../components/LeaveAMessage";
 
 const ContactsPage = () => {
