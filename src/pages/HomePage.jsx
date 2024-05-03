@@ -25,8 +25,30 @@ const HomePage = () => {
                     </div>
                 </div>
             </div>
-            <div className="bg-white">
-                <img src="./src/assets/dave.jpg" alt="dave" />
+            <div className="flex justify-center my-20">
+                <div className="flex justify-center w-full max-w-[900px] border-4 border-secondary rounded-md">
+                    <div className="bg-black flex-1">
+                        <img className="rounded-s-md" src="./src/assets/dave.jpg" alt="dave" />
+                    </div>
+                    <div className="flex flex-col justify-center bg-primary flex-1 px-10 gap-4 rounded-e-md">
+                        <span className="text-2xl font-extrabold">ABOUT ME</span>
+                        <span className="text-xs">I am a US Army Iraq War veteran. I am a Registered Nurse with a doctorate in nursing. I am also a Medical Doctor, but retired. Now I bring CARE to Airbnb. I am happily married to a Registered Nurse, Mary Sue. I have 2 sons, Ben and Joatham, a foster son Mark, a foster daughter, Z and 9 frozen embryos for surrogacy implantation. I am a proud AirBnB host.</span>
+                        <div className="">
+                            <button className="rounded-sm bg-secondary py-2 px-4 text-xs hover:bg-white hover:text-primary transition-colors duration-500">Get In Touch</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="flex flex-col items-center gap-20 mb-20">
+                <span className="text-2xl font-extrabold text-secondary">Our Listings</span>
+
+                <div className="grid grid-cols-3 gap-8">
+                    <div className="rounded-md h-96 w-72 bg-secondary border-2 border-primary"></div>
+                    <div className="rounded-md h-96 w-72 bg-secondary border-2 border-primary"></div>
+                    <div className="rounded-md h-96 w-72 bg-secondary border-2 border-primary"></div>
+                </div>
+
+                <button className="rounded-sm bg-secondary py-2 px-4 text-xs hover:bg-primary hover:text-white transition-colors duration-500">View More</button>
             </div>
         </>
     );

@@ -11,11 +11,11 @@ export default function RootLayout() {
                 </nav>
             </header>
 
-            <main className="relative grow mt-16 mb-16 md:mb-4">
+            <main className="grow pt-20">
                 <Outlet />
             </main>
 
-            <footer className="hidden md:block">
+            <footer className="">
                 <Footer />
             </footer>
         </div>
