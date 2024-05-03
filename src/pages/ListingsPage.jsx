@@ -8,7 +8,7 @@ const ListingsPage = () => {
                 </div>
             </div>
             <div className="flex justify-center text-secondary">
-                <span className="text-2xl font-extrabold">Yale University area</span>
+                <span className="text-2xl font-extrabold">Yale University Area</span>
             </div>
         </>
     );

@@ -1,11 +1,12 @@
-import { locations } from "../data";
+import { locations, contacts, links } from "../data";
+import ListBox from "./ListBox";
 
 const Footer2 = () => {
     return (
-        <div className="text-black">
-            {locations.map((location) => {
-                return <li key={location}>{location}</li>;
-            })}
+        <div className="flex justify-center py-20 bg-secondary gap-8">
+            <ListBox listObject={locations} />
+            <ListBox listObject={contacts} />
+            <ListBox listObject={links} />
         </div>
     );
 };
