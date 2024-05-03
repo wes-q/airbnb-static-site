@@ -2,10 +2,12 @@ import SlideshowAuto from "../components/SlideshowAuto";
 import Card from "../components/Card";
 import { listings } from "../data";
 import { useNavigate } from "react-router-dom";
-
-const images = ["./src/assets/1.jpg", "./src/assets/2.jpg"];
+import slideImage1 from "../assets/1.jpg";
+import slideImage2 from "../assets/2.jpg";
+import daveImage from "../assets/dave.jpg";
 
 const HomePage = () => {
+    const images = [slideImage1, slideImage2];
     const navigate = useNavigate(null);
     const handleViewMore = () => {
         navigate("/listings");
@@ -36,7 +38,7 @@ const HomePage = () => {
             <div className="flex justify-center my-20">
                 <div className="flex justify-center w-full max-w-[900px] border-4 border-secondary rounded-md p-2 bg-secondary">
                     <div className="bg-black flex-1">
-                        <img className="rounded-s-md" src="./src/assets/dave.jpg" alt="dave" />
+                        <img className="rounded-s-md" src={daveImage} alt="dave" />
                     </div>
                     <div className="flex flex-col justify-center bg-primary flex-1 px-10 gap-4 rounded-e-md">
                         <span className="text-2xl font-extrabold">ABOUT ME</span>

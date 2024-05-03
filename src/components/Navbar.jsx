@@ -1,4 +1,5 @@
 import { NavLink, Link } from "react-router-dom";
+import seranaImage from "../assets/serana-logo.png";
 
 const Navbar = () => {
     function toggleDarkMode() {
@@ -9,7 +10,7 @@ const Navbar = () => {
         <div className="bg-secondary h-20 flex justify-center w-full">
             <div className="flex justify-between items-center w-full max-w-[900px]">
                 <Link className="h-full py-2 flex" to="/">
-                    <img className="" src="./src/assets/serana-logo.png" alt="serana logo" />
+                    <img className="" src={seranaImage} alt="serana logo" />
                 </Link>
 
                 <div className="hidden md:flex gap-10 md:items-center">

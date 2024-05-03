@@ -1,12 +1,13 @@
 import ListBoxNoIcons from "../components/ListBoxNoIcons";
 import { locations, contacts } from "../data";
 import LeaveAMessage from "../components/LeaveAMessage";
+import listingImage from "../assets/listings-background.jpg";
 
 const ContactsPage = () => {
     return (
         <>
             <div className="relative flex justify-center h-56 w-full bg-black mb-20">
-                <img className="absolute inset-0 w-full h-full object-cover opacity-70" src="./src/assets/listings-background.jpg" alt="house back" />
+                <img className="absolute inset-0 w-full h-full object-cover opacity-70" src={listingImage} alt="house back" />
                 <div className="absolute inset-0 flex justify-center items-center text-4xl text-white">
                     <span className="font-bold">CONTACT US</span>
                 </div>
