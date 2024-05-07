@@ -1,8 +1,9 @@
-# React + Vite
+# Single Page App Website created for practice purposes only
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Live: https://airbnb-static-site.vercel.app/
 
-Currently, two official plugins are available:
+![image](https://github.com/wes-q/airbnb-static-site/assets/121594156/081ceb02-2596-4795-914a-b7d84dfda78d)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![image](https://github.com/wes-q/airbnb-static-site/assets/121594156/e5d5c38b-adb0-464f-a1df-838d20efced6)
+
+![image](https://github.com/wes-q/airbnb-static-site/assets/121594156/5626aab2-787e-4fcb-b0e7-de8745d3d204)
